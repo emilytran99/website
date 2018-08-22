@@ -85,7 +85,7 @@ ul {
     overflow: auto;    
     z-index: 999;
     display: block;
-    box-shadow: 0px 2px 8px #6c757d;
+    box-shadow: 0px 2px 8px #a9aeb2;
 }
 
 .heading {
@@ -100,7 +100,7 @@ ul {
     margin: 0;
     display: inline-block;
     line-height: 60px;
-    text-shadow: 1px 1px 1px #6c757d;
+    text-shadow: 1px 1px 1px #b3b8bc;
 }
 
 .heading a {
