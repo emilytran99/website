@@ -1,0 +1,283 @@
+:root {
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: white;
+    display: table;
+    width: 100%;
+}
+
+@font-face{ 
+    font-family: "Galano";
+    src: url("fonts/galanogrotesquedemo-bold-webfont.woff");
+}
+
+@font-face{ 
+    font-family: "HK Grotesk Regular";
+    src: url("fonts/HKGrotesk-Regular.otf");
+}
+
+@font-face{ 
+    font-family: "HK Grotesk Bold";
+    src: url("fonts/HKGrotesk-Bold.otf");
+}
+
+p {
+    line-height: 18px;
+    font-family: "HK Grotesk Regular";
+}
+
+a {
+    color: #76d424;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+ul {
+    line-height: 18px;
+    font-family: "HK Grotesk Regular";
+    margin-left: -10px;
+}
+
+.masthead {
+    padding-top: 15px;
+    margin-bottom: -10px;
+    background-color: #FADA5E;
+    overflow: auto;    
+    z-index: 999;
+    display: block;
+    box-shadow: 0px 2px 8px #6c757d;
+}
+
+.heading {
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: "Galano";
+    position: relative;
+    float: left;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    margin: 0;
+    display: inline-block;
+    line-height: 60px;
+    text-shadow: 1px 1px 1px #6c757d;
+}
+
+.heading a {
+    color: black;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 125px;
+    width: 65%;
+}
+
+.nav {
+    float: right;  
+    position: relative;
+    padding-right: 40px;
+}
+
+.tab {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: sub;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;    
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: "Galano";
+    display: inline-block;
+    padding-top: 18px;
+    margin: 0px 12px 0px 12px;
+}
+
+.tab button:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: "Galano";
+    line-height: 20px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+h3 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-family: "HK Grotesk Bold";
+    line-height: 1.2;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    font-family: "HK Grotesk Bold";
+    display: inline-block;
+}
+
+#projectButtons {
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.tileContainer {
+    margin: 10px 0 15px 0;
+    overflow: hidden;
+}
+
+.tileContainer ul {
+    text-align: left;
+}
+
+.tile {
+    width: 265px;
+    height: 210px;
+    overflow-y: scroll;
+    text-align: center;
+    display: none;
+    border-style: solid;
+    border-width: 3px;
+    padding: 15px 18px 0 15px;
+    margin: 10px 10px 10px 10px;
+    border-color: #FADA5E;
+    box-shadow: 1px 2px 3px #b3b8bc;
+}
+
+.tile h2, h3 {
+    text-decoration: none;
+    color: black;
+}
+
+.show {
+    display: inline-block;
+}
+
+.btn {
+    background-color: #FADA5E;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: "Galano";
+    display: inline-block;
+    padding: 8px 10px 5px 10px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 1px 2px 3px #b3b8bc;
+}
+
+.btn.active {
+    background-color: white;
+    color: black;
+    outline-color: #FADA5E;
+    outline-style: solid;
+    outline-width: 2px; 
+}
+
+.tileicon {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 40px 50px 40px 30px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .content {
+  max-height: 40%;
+  overflow: auto;
+}

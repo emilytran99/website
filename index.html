@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Emily Tran</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="masthead">
+        <h1 class="heading"><a href="">emily tran.</a></h1>   
+        <div class="nav">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'about')">about</button>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'projects')">projects</button>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'updates')">updates</button>
+            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'resume')">resume</button>
+            </div>
+        </div>    
+    </div>
+
+    <div class="container">
+        
+        <div id="about" class="tabcontent">
+            <h2> welcome! </h2>
+            <p style="text-align: center; margin: 0 25px 0 25px">
+                <br>
+                
+                I am a sophomore at Tufts University, majoring in Computer Science and considering a minor in Foreign Policy Analysis.
+                I'm really interested in software development, cybersecurity, and data science. 
+                I find space exploration, film, and Asian-American race relations fascinating, and I like to dabble in photography and Photoshop. I am also a big fan of the subway and cooking shows! I am based in New York City and Boston.
+
+            </p>
+                
+            <h4>currently: </h4>
+            <p style="display: inline; text-align: center">
+                I am a Teaching Assistant for the Girls Who Code Summer Immersion Program @ Blackrock.
+                <!-- I am a Teaching Assistant for COMP 11: Introduction to Computer Science. I also serve as Secretary of the Women in Computer Science club, and organize the annual Tufts Women in Tech Conference. -->
+            </p>
+
+            <br><br><br>
+
+            <a href="https://www.linkedin.com/in/emily-tran-75a02411b/"><img src="img/linkedin.png" style="width: 40px; height: 40px; border-radius: 70px; box-shadow: 1px 1px 3px #6c757d;"></a>
+
+            <img src="img/profile.png" alt="profile" style="width: 110px; height: 110px; border-radius: 70px; margin: 0 20px 0 20px; box-shadow: 0px 2px 8px #6c757d;">
+
+            <a href="https://github.com/emilytran99"><img src="img/github.png" style="width: 40px; height: 40px; border-radius: 70px; box-shadow: 1px 1px 3px #6c757d;"></a>
+
+        </div>
+
+
+
+        <!-- later: fix multiple buttons active -->
+        <div id="projects" class="tabcontent" style="display: none;">
+            <div id="projectButtons">
+                <button class="btn active" onclick="filterSelection('all')">show all</button>
+                <button class="btn" onclick="filterSelection('personal')">personal</button>
+                <button class="btn" onclick="filterSelection('comp40')">comp 40</button>
+                <button class="btn" onclick="filterSelection('comp15')">comp 15</button>
+                <br>
+                <button class="btn" onclick="filterSelection('cplusplus')">c++</button>
+                <button class="btn" onclick="filterSelection('clang')">c</button>
+                <button class="btn" onclick="filterSelection('python')">python</button>
+                <button class="btn" onclick="filterSelection('htmlcss')">html/css</button>
+                <button class="btn" onclick="filterSelection('assembly')">assembly</button>
+                <button class="btn" onclick="filterSelection('js')">javascript</button>
+            </div>
+
+            <div class="tileContainer">
+                <!-- icons from icons8 -->
+                <!-- later: convert pop ups to modal -->
+                <a class="tile personal python" href="#familytreepop">
+                    <h2>family tree</h2>
+                    <h3>personal project | python</h3>
+                    <div class="tileicon"><img src="img/tree.png"></div>
+                </a>
+
+                <div id="familytreepop" class="overlay">
+                    <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>family tree</h2>
+                        <h3>personal project | python</h3>
+                        <div class="tileicon"><img src="img/tree.png"></div>
+                        <ul>
+                            <li>implemented weighted directed graph using adjacency lists to represent family tree where weight correlates to type of relationship</li>
+                            <li>wrote algorithm to determine relationship between family members</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile personal htmlcss js" href="#mapmoneypop">
+                    <h2>map the money</h2>
+                    <h3>personal project | html, css, javascript</h3>
+                    <div class="tileicon"><img src="img/capitol.png"></div>
+                </a>
+
+                <div id="mapmoneypop" class="overlay">
+                    <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>map the money</h2>
+                        <h3>personal project | html, css, javascript | <a href="https://emilytran99.github.io/mapthemoney/">link</a></h3>
+                        <div class="tileicon"><img src="img/capitol.png"></div>
+                        <ul>
+                            <li>built map showing top 10 individual and corporate donors to each sitting U.S. senator using HTML, CSS, and the D3 Javascript library</li>
+                            <li>cleaned data retrieved from Center for Responsive Politics’ public campaign finance disclosure API</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp40 assembly" href="#rpniipop">
+                    <h2>reverse polish notation calculator, pt. ii</h2>
+                    <h3>comp 40 | um macro assembler</h3>
+                    <div class="tileicon"><img src="img/calculator.png"></div>
+                </a>
+
+                <div id="rpniipop" class="overlay">
+                    <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>reverse polish notation calculator, pt. ii</h2>
+                        <h3>comp 40 | um macro assembler</h3>
+                        <div class="tileicon"><img src="img/calculator.png"></div>
+                        <ul>
+                            <li>implemented calculator on UM from previous project using jump table for control flow and a register for value stack</li>
+                            <li>wrote macros for mathematic and bitwise operations, and recursive print function to print multi-digit numbers in pseudo assembly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp40 clang" href="#umpop">
+                    <h2>universal machine</h2>
+                    <h3>comp 40 | c</h3>
+                    <div class="tileicon"><img src="img/window.png"></div>
+                </a>
+
+                <div id="umpop" class="overlay">
+                    <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>universal machine</h2>
+                        <h3>comp 40 | c</h3>
+                        <div class="tileicon"><img src="img/window.png"></div>
+                        <ul>
+                            <li>designed and implemented Turing complete 32bit virtual machine with 8 registers and segmented memory on 64bit machine</li>
+                            <li>profiled and removed performance bottlenecks to decrease time for executing benchmark program from 150s to 5s</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp40 clang assembly" href="#binarypop">
+                    <h2>binary bomb</h2>
+                    <h3>comp 40 | c, amd64 assembly</h3>
+                    <div class="tileicon"><img src="img/dynamite.png"></div>
+                </a>
+
+                <div id="binarypop" class="overlay">
+                     <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>binary bomb</h2>
+                        <h3>comp 40 | c, amd64 assembly</h3>
+                        <div class="tileicon"><img src="img/dynamite.png"></div>
+                        <ul>
+                            <li>used GNU Debugger to analyze assembly and find out what inputs would “defuse” each of the six mini programs</li>
+                            <li>wrote out the C equivalent to understand the underlying structure of programs and how various data structures are represented in assembly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp40 clang" href="#arithpop">
+                    <h2>image compressor & decompressor</h2>
+                    <h3>comp 40 | c</h3>
+                    <div class="tileicon"><img src="img/image.png"></div>
+                </a>
+
+                <div id="arithpop" class="overlay">
+                     <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>image compressor & decompressor</h2>
+                        <h3>comp 40 | c</h3>
+                        <div class="tileicon"><img src="img/image.png"></div>
+                        <ul>
+                            <li>designed and implemented interfaces for converting RGB color space to component video color space, using the discrete cosine transform, and quantizing chroma</li>
+                            <li>wrote bitpacking module to condense pixel information into 64 bit words</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp40 clang" href="#ppmtranspop">
+                    <h2>ppmtrans</h2>
+                    <h3>comp 40 | c</h3>
+                    <div class="tileicon"><img src="img/grid.png"></div>
+                </a>
+
+                <div id="ppmtranspop" class="overlay">
+                     <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>ppmtrans</h2>
+                        <h3>comp 40 | c</h3>
+                        <div class="tileicon"><img src="img/grid.png"></div>
+                        <ul>
+                            <li>designed and executed implementation of blocked (n x n) 2D array using 1D array for given polymorphic interface to maximize locality</li>
+                            <li>wrote program that transformed .ppm files with row, col, and block-major traversals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp40 clang" href="#unblackpop">
+                    <h2>unblackedges</h2>
+                    <h3>comp 40 | c</h3>
+                    <div class="tileicon"><img src="img/invert.png"></div>
+                </a>
+
+                <div id="unblackpop" class="overlay">
+                     <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>unblackedges</h2>
+                        <h3>comp 40 | c</h3>
+                        <div class="tileicon"><img src="img/invert.png"></div>
+                        <ul>
+                            <li>designed and executed implementation of unboxed 2D array using 1D array for given interface</li>
+                            <li>wrote 2 versions of program removing black edges from scanned images, using stack and recursion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp40 clang" href="#simlinespop">
+                    <h2>simlines</h2>
+                    <h3>comp 40 | c</h3>
+                    <div class="tileicon"><img src="img/search.png"></div>
+                </a>
+
+                <div id="simlinespop" class="overlay">
+                     <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>simlines</h2>
+                        <h3>comp 40 | c</h3>
+                        <div class="tileicon"><img src="img/search.png"></div>
+                        <ul>
+                            <li>wrote program that scanned through files and identified similar lines using hash tables</li>
+                            <li>parsed through input following given definition of similarity and stored locations of similar lines in linked lists</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp15 cplusplus" href="#gerppop">
+                    <h2>gerp</h2>
+                    <h3>comp 15 | c++</h3>
+                    <div class="tileicon"><img src="img/directory.png"></div>
+                </a>
+
+                <div id="gerppop" class="overlay">
+                     <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>gerp</h2>
+                        <h3>comp 15 | c++</h3>
+                        <div class="tileicon"><img src="img/directory.png"></div>
+                        <ul>
+                            <li>implemented program that indexed and queried file directory for all lines with given word with both case sensitive and insensitive capabilities</li>
+                            <li>used hash tables to store appearances and implemented chaining for handling collisions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="tile comp15 cplusplus" href="#rpnipop">
+                    <h2>reverse polish notation calculator, pt. i</h2>
+                    <h3>comp 15 | c++</h3>
+                    <div class="tileicon"><img src="img/abacus.png"></div>
+                </a>
+
+                <div id="rpnipop" class="overlay">
+                     <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <h2>reverse polish notation calculator, pt. i</h2>
+                        <h3>comp 15 | c++</h3>
+                        <div class="tileicon"><img src="img/abacus.png"></div>
+                        <ul>
+                            <li>implemented calculator that could also parse booleans and code blocks using a stack</li>
+                            <li>added functionality for supplementary features such as swap, execute, and read from file</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- later: make blog posts in jekyll?-->
+        <div id="updates" class="tabcontent" style="display: none">
+            <h2 style="text-align: left">piazza tech tour</h2>
+            <h3 style="text-align: left">aug 19, 2018</h3>
+            <p style="text-align: left">
+                For the past three days, I've been in Palo Alto! I was lucky enough to be selected for the 2018 Summer Piazza Tech Tour, so they flew me out to visit Airbnb, Piazza, Roche, and Lyft. Going to such different companies gave me a good perspective on what kind of environment I'd like to work in, and what I'd want from an internship. Between the tours and panels, I realized I'd like an internship where I can build something that will make an impact, and learn about various parts of the company so I can understand what different teams do. I also met nine other incredibly passionate and insightful CS college students from all over the country, all with varied stories and perspectives. I had a great time bonding with all of them, and on a suggestion from a friend, I tried a delicious chocolate cronut from Happy Donuts. All in all, it was a great first trip to the Bay!
+            </p>
+
+            <br>
+
+            <h2 style="text-align: right">girls who code visits moma</h2>
+            <h3 style="text-align: right">aug 11, 2018</h3>
+            <p style="text-align: right">
+                On Thursday, we visited the Museum of Modern Art after hours - it was great that the MOMA was only a few blocks from the BlackRock offices so we could avoid the subway during rush hour. We were lucky enough to talk with CTO Diana Pan, about how the museum utilizes technology for its operations. She spoke about how curators have begun redefining what they consider art as technology becomes all-encompassing in our lives; perhaps one day tweets might be in the MOMA! We also explored the <a href="https://www.moma.org/calendar/exhibitions/3889">"City Dreams" exhibit by Congolese artist Bodys Isek Kingelez</a>, which featured incredibly detailed models of utopian cities built from everyday objects. My favorite part was the VR experience, which placed us in the <em>Ville Fantome</em> model and let us explore as if we were actually in the city! 
+            </p>
+
+            <br>
+
+            <h2 style="text-align: left">girls who code visits new york stock exchange</h2>
+            <h3 style="text-align: left">jul 27, 2018</h3>
+            <p style="text-align: left">
+                For our latest field trip organized by our host company BlackRock, we went to the closing bell ceremony at the New York Stock Exchange. 13 girls that we randomly selected went up on the podium and ended trading for the weekend! One girl even got to ring the bell, and joined history by signing this book that everyone else who has ever rung the bell also signed. I was surprised that she just had to press a button to ring the bell, which was much louder than I'd anticipated - I'd been expecting a Liberty Bell-esque bell that you'd have to hit. We also talked to a Designated Market Maker about what his job looks like, and learned about how technology drives the trades. <a href="https://www.cnbc.com/2018/07/27/blackrock-and-girls-who-code-ring-nyse-closing-bell.html">(link)</a>
+            </p>
+
+            <br>
+
+            <h2 style="text-align: right">family tree graphing project</h2>
+            <h3 style="text-align: right">jul 25, 2018</h3>
+            <p style="text-align: right">
+                I decided recently that I wanted to create something to represent my personal family tree and the relationships within it since my family is much larger than most. At first, I was really stuck on using a tree for the data structure - after all, family tree does have "tree" in it. However, I realized that each node having only one parent might post a problem for representing familial relationships. Currently, I've decided to represent my family tree as a weighted directed graph where the weight corresponds to the type of relationship between each person.
+            </p>
+                
+        </div>
+
+
+
+        <div id="resume" class="tabcontent" style="display: none;">
+            <p>
+                <iframe src="https://drive.google.com/file/d/1B3aWGW7SPENj21XZ4I997Xge6JfDxThC/preview" width="720" height="800"></iframe>
+            </p>
+        </div>
+
+    </div>
+
+
+    <script>
+    //nav tabs
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName('tabcontent');
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = 'none';
+        }
+
+        tablinks = document.getElementsByClassName('tablinks');
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+
+        document.getElementById(tabName).style.display = 'block';
+
+        evt.currentTarget.className += ' active';
+    }
+
+    //later: add underline for current tab
+
+    //project filters
+    document.getElementById('about').click();
+
+    filterSelection('all')
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName('tile');
+      if (c == 'all') c = '';
+      for (i = 0; i < x.length; i++) {
+        removeClass(x[i], 'show');
+        if (x[i].className.indexOf(c) > -1) addClass(x[i], 'show');
+      }
+    }
+
+    function addClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(' ');
+      arr2 = name.split(' ');
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += ' ' + arr2[i];
+        }
+      }
+    }
+
+    function removeClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(' ');
+      arr2 = name.split(' ');
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+      }
+      element.className = arr1.join(' ');
+    }
+
+    var btnContainer = document.getElementById('projectButtons');
+    var btns = btnContainer.getElementsByClassName('btn');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function() {
+        var current = document.getElementsByClassName('active');
+        current[0].className = current[0].className.replace(' active', '');
+        this.className += ' active';
+      });
+    }
+    </script>
+
+
+</body>
+</html>
