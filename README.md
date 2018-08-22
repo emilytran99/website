@@ -1,2 +1,2 @@
 # [link](https://emilytran99.github.io/website/)
-personal website
+exploring html, css, javascript, markdown, and jekyll
