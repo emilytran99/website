@@ -77,10 +77,10 @@ ul {
         padding-left: 20px;
     }
     nav {
-        padding-right: 10px;
+        margin-bottom: 10px;
     }
-    .tab button {
-        padding-top: 8px;
+    .tab {
+        margin-top: 5px;
     }
     .container {
         width: 75%;
@@ -99,13 +99,10 @@ ul {
         padding-left: 40px;
     }
     nav {
-        padding-right: 30px;
+        margin-bottom: 10px;
     }
     .tab {
-        float: right;
-    }
-    .tab button {
-        padding-top: 0px;
+        margin-top: 5px;
     }
     .container {
         width: 65%;
@@ -126,14 +123,14 @@ ul {
         float: left;
     }
     nav {
-        padding-right: 30px;
         float: right;
+        margin-right: 20px;
     }
     .tab {
         float: right;
     }
     .tab button {
-        padding-top: 18px;
+        padding-top: 15px;
     }
     .container {
         width: 65%;
@@ -154,14 +151,14 @@ ul {
         float: left;
     }
     nav {
-        padding-right: 30px;
         float: right;
+        margin-right: 20px;
     }
     .tab {
         float: right;
     }
     .tab button {
-        padding-top: 18px;
+        padding-top: 15px;
     }
     .container {
         width: 65%;
@@ -182,14 +179,14 @@ ul {
         float: left;
     }
     nav {
-        padding-right: 30px;
         float: right;
+        margin-right: 20px;
     }
     .tab {
         float: right;
     }
     .tab button {
-        padding-top: 18px;
+        padding-top: 15px;
     }
     .container {
         width: 65%;
@@ -252,7 +249,7 @@ nav {
     letter-spacing: 1px;
     color: black;
     font-family: "Galano";
-    margin: 0px 15px 0px 15px;
+    margin: 0px 6px 0px 6px;
 }
 
 .tab button:hover {
