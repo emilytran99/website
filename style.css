@@ -78,14 +78,7 @@ ul {
     .heading {
         padding-left: 20px;
     }
-    .navi {
-        padding-right: 40px;
-        width: auto;
-        /* width: 320px;*/
-        float: right; 
-    }
     .tab button {
-        align-items: center;
         padding-top: 0px;
     }
     .container {
@@ -102,13 +95,7 @@ ul {
     .heading {
         padding-left: 40px;
     }
-    .navi {
-        padding-right: 40px;
-        width: auto;
-        float: right; 
-    }
     .tab button {
-        align-items: center;
         padding-top: 0px;
     }
     .container {
@@ -125,13 +112,7 @@ ul {
     .heading {
         padding-left: 40px;
     }
-    .navi {
-        padding-right: 40px;
-        width: auto;
-        float: right; 
-    }
     .tab button {
-        align-items: flex-start;
         padding-top: 18px;
     }
     .container {
@@ -148,13 +129,7 @@ ul {
     .heading {
         padding-left: 40px;
     }
-    .navi {
-        padding-right: 40px;
-        width: auto;
-        float: right; 
-    }
     .tab button {
-        align-items: flex-start;
         padding-top: 18px;
     }
     .container {
@@ -171,13 +146,7 @@ ul {
     .heading {
         padding-left: 40px;
     }
-    .navi {
-        padding-right: 40px;
-        width: auto;
-        float: right; 
-    }
     .tab button {
-        align-items: flex-start;
         padding-top: 18px;
     }
     .container {
@@ -213,7 +182,6 @@ ul {
     margin: 0;
     display: inline-block;
     line-height: 60px;
-    text-shadow: 1px 1px 1px #b3b8bc;
     float: left;
 }
 
@@ -223,6 +191,8 @@ ul {
 
 .navi {
     position: relative;
+    padding-right: 40px;
+    float: right;
 }
 
 .tab {
