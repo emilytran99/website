@@ -141,8 +141,6 @@ ul {
     }
     nav {
         margin-right: 20px;
-    }
-    .tab {
         float: right;
     }
     .tab button {
@@ -190,6 +188,7 @@ ul {
 
 nav {
     position: relative;
+    display: inline;
 }
 
 .tab {
