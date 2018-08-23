@@ -143,6 +143,9 @@ ul {
         margin-right: 20px;
         float: right;
     }
+    .tab {
+        float: right;
+    }
     .tab button {
         padding-top: 10px;
         margin: 0px 6px 0px 6px;
