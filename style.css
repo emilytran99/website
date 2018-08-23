@@ -21,10 +21,6 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-}
-
 body {
     padding: 0;
     margin: 0;
@@ -32,7 +28,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
     background-color: white;
     display: table;
     width: 100%;
@@ -76,9 +72,11 @@ ul {
 
 @media only screen and (max-width: 576px) {
     .heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
         padding-left: 20px;
     }
-    .navi {
+    nav {
         padding-right: 10px;
     }
     .tab button {
@@ -96,10 +94,15 @@ ul {
 
 @media (min-width: 576px) {
     .heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
         padding-left: 40px;
     }
-    .navi {
+    nav {
         padding-right: 30px;
+    }
+    .tab {
+        float: right;
     }
     .tab button {
         padding-top: 0px;
@@ -116,10 +119,18 @@ ul {
 
 @media (min-width: 768px) {
     .heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        margin-right: auto !important;
         padding-left: 40px;
+        float: left;
     }
-    .navi {
+    nav {
         padding-right: 30px;
+        float: right;
+    }
+    .tab {
+        float: right;
     }
     .tab button {
         padding-top: 18px;
@@ -136,10 +147,18 @@ ul {
 
 @media (min-width: 992px) {
     .heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        margin-right: auto !important;
         padding-left: 40px;
+        float: left;
     }
-    .navi {
+    nav {
         padding-right: 30px;
+        float: right;
+    }
+    .tab {
+        float: right;
     }
     .tab button {
         padding-top: 18px;
@@ -156,10 +175,18 @@ ul {
 
 @media (min-width: 1200px) {
     .heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        margin-right: auto !important;
         padding-left: 40px;
+        float: left;
     }
-    .navi {
+    nav {
         padding-right: 30px;
+        float: right;
+    }
+    .tab {
+        float: right;
     }
     .tab button {
         padding-top: 18px;
@@ -194,23 +221,20 @@ ul {
     font-family: "Galano";
     position: relative;
     padding-bottom: 10px;
-    margin: 0;
-    display: inline-block;
+    display: block;
     line-height: 60px;
-    float: left;
+    
 }
 
 .heading a {
     color: black;
 }
 
-.navi {
+nav {
     position: relative;
-    float: right;
 }
 
 .tab {
-    float: right;
     overflow: hidden;
     display: inline-block;
     -webkit-transition: all .3s;
@@ -228,7 +252,7 @@ ul {
     letter-spacing: 1px;
     color: black;
     font-family: "Galano";
-    margin: 0px 14px 0px 14px;
+    margin: 0px 15px 0px 15px;
 }
 
 .tab button:hover {
