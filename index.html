@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Emily Tran</title>
     <link rel="icon" type="image/png" href="img/rocket.png">
     <link rel="stylesheet" href="style.css" />
@@ -10,7 +11,8 @@
 <body>
     <div class="masthead">
         <h1 class="heading"><a href="">emily tran.</a></h1>   
-        <div class="nav">
+        <!-- later: make tabs align right on mobile-->
+        <div class="navi">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'about')">about</button>
             </div>
@@ -30,7 +32,7 @@
         
         <div id="about" class="tabcontent">
             <h2> welcome! </h2>
-            <p style="text-align: center; margin: 0 25px 0 25px">
+            <p style="display: inline; text-align: center; margin: 0 25px 0 25px">
                 <br>
                 
                 I am a sophomore at Tufts University, majoring in Computer Science and considering a minor in Foreign Policy Analysis.
@@ -38,6 +40,8 @@
                 I find space exploration, film, and Asian-American race relations fascinating, and I like to dabble in photography and Photoshop. I am also a big fan of the subway and cooking shows! I am based in New York City and Boston.
 
             </p>
+
+            <br><br>
                 
             <h4>currently: </h4>
             <p style="display: inline; text-align: center">
@@ -47,11 +51,11 @@
 
             <br><br><br>
 
-            <a href="https://www.linkedin.com/in/emily-tran-75a02411b/"><img src="img/linkedin.png" style="width: 40px; height: 40px; border-radius: 70px; box-shadow: 1px 1px 3px #6c757d;"></a>
+            <a href="https://www.linkedin.com/in/emily-tran-75a02411b/"><img src="img/linkedin.png" style="width: 40px; height: 40px; border-radius: 70px; box-shadow: 1px 1px 2px #6c757d;"></a>
 
             <img src="img/profile.png" alt="profile" style="width: 110px; height: 110px; border-radius: 70px; margin: 0 20px 0 20px; box-shadow: 0px 2px 8px #6c757d;">
 
-            <a href="https://github.com/emilytran99"><img src="img/github.png" style="width: 40px; height: 40px; border-radius: 70px; box-shadow: 1px 1px 3px #6c757d;"></a>
+            <a href="https://github.com/emilytran99"><img src="img/github.png" style="width: 40px; height: 40px; border-radius: 70px; box-shadow: 1px 1px 2px #6c757d;"></a>
 
         </div>
 
@@ -73,9 +77,10 @@
                 <button class="btn" onclick="filterSelection('js')">javascript</button>
             </div>
 
+
             <div class="tileContainer">
                 <!-- icons from icons8 -->
-                <!-- later: convert pop ups to modal -->
+                <!-- later: convert pop ups to modal? -->
                 <a class="tile personal python" href="#familytreepop">
                     <h2>family tree</h2>
                     <h3>personal project | python</h3>
@@ -298,6 +303,7 @@
             </p>
 
             <br>
+            <br>
 
             <h2 style="text-align: right">girls who code visits moma</h2>
             <h3 style="text-align: right">aug 11, 2018</h3>
@@ -306,6 +312,7 @@
             </p>
 
             <br>
+            <br>
 
             <h2 style="text-align: left">girls who code visits new york stock exchange</h2>
             <h3 style="text-align: left">jul 27, 2018</h3>
@@ -313,6 +320,7 @@
                 For our latest field trip organized by our host company BlackRock, we went to the closing bell ceremony at the New York Stock Exchange. 13 girls that we randomly selected went up on the podium and ended trading for the weekend! One girl even got to ring the bell, and joined history by signing this book that everyone else who has ever rung the bell also signed. I was surprised that she just had to press a button to ring the bell, which was much louder than I'd anticipated - I'd been expecting a Liberty Bell-esque bell that you'd have to hit. We also talked to a Designated Market Maker about what his job looks like, and learned about how technology drives the trades. <a target="_blank" href="https://www.cnbc.com/2018/07/27/blackrock-and-girls-who-code-ring-nyse-closing-bell.html">(link)</a>
             </p>
 
+            <br>
             <br>
 
             <h2 style="text-align: right">family tree graphing project</h2>
@@ -324,15 +332,16 @@
         </div>
 
 
+        <!-- later: write resume in markdown? -->
+        <!-- later: replace iframe with actual asset-->
 
         <div id="resume" class="tabcontent" style="display: none;">
             <p>
-                <iframe src="https://drive.google.com/file/d/1B3aWGW7SPENj21XZ4I997Xge6JfDxThC/preview" width="720" height="800"></iframe>
+                <iframe src="https://drive.google.com/file/d/1B3aWGW7SPENj21XZ4I997Xge6JfDxThC/preview" width="100%" height="500"></iframe>
             </p>
         </div>
 
     </div>
-
 
     <script>
     //nav tabs
