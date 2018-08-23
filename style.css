@@ -78,8 +78,11 @@ ul {
     .heading {
         padding-left: 20px;
     }
+    .navi {
+        padding-right: 10px;
+    }
     .tab button {
-        padding-top: 0px;
+        padding-top: 8px;
     }
     .container {
         width: 75%;
@@ -94,6 +97,9 @@ ul {
 @media (min-width: 576px) {
     .heading {
         padding-left: 40px;
+    }
+    .navi {
+        padding-right: 30px;
     }
     .tab button {
         padding-top: 0px;
@@ -112,6 +118,9 @@ ul {
     .heading {
         padding-left: 40px;
     }
+    .navi {
+        padding-right: 30px;
+    }
     .tab button {
         padding-top: 18px;
     }
@@ -128,6 +137,9 @@ ul {
 @media (min-width: 992px) {
     .heading {
         padding-left: 40px;
+    }
+    .navi {
+        padding-right: 30px;
     }
     .tab button {
         padding-top: 18px;
@@ -146,6 +158,9 @@ ul {
     .heading {
         padding-left: 40px;
     }
+    .navi {
+        padding-right: 30px;
+    }
     .tab button {
         padding-top: 18px;
     }
@@ -161,7 +176,7 @@ ul {
 
 .masthead {
     padding-top: 15px;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
     background-color: #FADA5E;
     overflow: auto;    
     z-index: 990;
@@ -191,11 +206,11 @@ ul {
 
 .navi {
     position: relative;
-    padding-right: 40px;
     float: right;
 }
 
 .tab {
+    float: right;
     overflow: hidden;
     display: inline-block;
     -webkit-transition: all .3s;
@@ -223,7 +238,7 @@ ul {
 .container {
     text-align: center;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 90px;
     margin-bottom: 125px;
 }
 
