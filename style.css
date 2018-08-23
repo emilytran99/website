@@ -72,15 +72,19 @@ ul {
 
 @media only screen and (max-width: 576px) {
     .heading {
+        font-size: 40px;
+        line-height: 45px;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
-        padding-left: 20px;
     }
     nav {
         margin-bottom: 10px;
     }
     .tab {
         margin-top: 5px;
+    }
+    .tab button {
+        margin: 0px 6px 0px 6px;
     }
     .container {
         width: 75%;
@@ -94,15 +98,19 @@ ul {
 
 @media (min-width: 576px) {
     .heading {
+        font-size: 45px;
+        line-height: 50px;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
-        padding-left: 40px;
     }
     nav {
         margin-bottom: 10px;
     }
     .tab {
         margin-top: 5px;
+    }
+    .tab button {
+        margin: 0px 6px 0px 6px;
     }
     .container {
         width: 65%;
@@ -116,21 +124,24 @@ ul {
 
 @media (min-width: 768px) {
     .heading {
+        font-size: 45px;
+        line-height: 50px;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
         margin-right: auto !important;
-        padding-left: 40px;
+        padding-left: 30px;
         float: left;
     }
     nav {
-        float: right;
         margin-right: 20px;
+        float: right;
     }
     .tab {
         float: right;
     }
     .tab button {
-        padding-top: 15px;
+        padding-top: 10px;
+        margin: 0px 6px 0px 6px;
     }
     .container {
         width: 65%;
@@ -138,62 +149,6 @@ ul {
     .popup {
         margin: 70px auto;
         width: 60%;
-        padding: 40px 50px 40px 30px;
-    }
-}
-
-@media (min-width: 992px) {
-    .heading {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        margin-right: auto !important;
-        padding-left: 40px;
-        float: left;
-    }
-    nav {
-        float: right;
-        margin-right: 20px;
-    }
-    .tab {
-        float: right;
-    }
-    .tab button {
-        padding-top: 15px;
-    }
-    .container {
-        width: 65%;
-    }
-    .popup {
-        margin: 70px auto;
-        width: 50%;
-        padding: 40px 50px 40px 30px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .heading {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        margin-right: auto !important;
-        padding-left: 40px;
-        float: left;
-    }
-    nav {
-        float: right;
-        margin-right: 20px;
-    }
-    .tab {
-        float: right;
-    }
-    .tab button {
-        padding-top: 15px;
-    }
-    .container {
-        width: 65%;
-    }
-    .popup {
-        margin: 70px auto;
-        width: 50%;
         padding: 40px 50px 40px 30px;
     }
 }
@@ -212,15 +167,12 @@ ul {
 }
 
 .heading {
-    font-size: 50px;
     letter-spacing: 1px;
     color: black;
     font-family: "Galano";
     position: relative;
     padding-bottom: 10px;
-    display: block;
-    line-height: 60px;
-    
+    display: block;    
 }
 
 .heading a {
@@ -249,7 +201,6 @@ nav {
     letter-spacing: 1px;
     color: black;
     font-family: "Galano";
-    margin: 0px 6px 0px 6px;
 }
 
 .tab button:hover {
