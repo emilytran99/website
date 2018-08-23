@@ -1,2 +1,2 @@
 # [link](https://emilytran99.github.io)
-exploring html, css, javascript, markdown, and jekyll
+exploring html, css, and javascript
