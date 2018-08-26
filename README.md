@@ -3,5 +3,4 @@ exploring html, css, javascript, markdown, and jekyll
 
 ## to do: 
 - [ ] convert popups on project page to modal
-- [X] clean up h1-h6 use
 - [ ] update resume
