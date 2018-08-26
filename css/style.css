@@ -15,7 +15,6 @@
 html {
     font-family: sans-serif;
     line-height: 1.15;
-    height: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
@@ -43,17 +42,17 @@ body {
 
 @font-face{ 
     font-family: "Galano";
-    src: url("fonts/galanogrotesquedemo-bold-webfont.woff");
+    src: url("../fonts/galanogrotesquedemo-bold-webfont.woff");
 }
 
 @font-face{ 
     font-family: "HK Grotesk Regular";
-    src: url("fonts/HKGrotesk-Regular.otf");
+    src: url("../fonts/HKGrotesk-Regular.otf");
 }
 
 @font-face{ 
     font-family: "HK Grotesk Bold";
-    src: url("fonts/HKGrotesk-Bold.otf");
+    src: url("../fonts/HKGrotesk-Bold.otf");
 }
 
 p {
@@ -223,15 +222,10 @@ nav {
 
 .container {
     text-align: center;
-    height: 100%;
-}
-
-#resume {
-    height: 100%;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     color: black;
     font-family: "Galano";
@@ -256,17 +250,28 @@ h4 {
     display: inline-block;
 }
 
+h5 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: black;
+    font-family: "Galano";
+    line-height: 20px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
 #projectButtons {
     margin: auto;
+    margin-top: 20px;
     margin-bottom: 25px;
 }
 
-.tileContainer {
+#tileContainer {
     margin: 10px 0 15px 0;
     overflow: hidden;
 }
 
-.tileContainer ul {
+#tileContainer ul {
     text-align: left;
 }
 
@@ -365,7 +370,7 @@ h4 {
 
 .resizedpdf {
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 100%; 
     padding-top: 30px;
     height: 0;
     overflow: hidden;

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emily Tran</title>
+    <link rel="icon" type="image/png" href="/img/rocket.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="masthead">
+        <h1 class="heading"><a href="index.html">emily tran.</a></h1>   
+        <nav>
+            <div class="tab">
+                <button onclick="window.location.href='/'">about</button>
+            </div>
+            <div class="tab">
+                <button onclick="window.location.href='/projects'">projects</button>
+            </div>
+            <div class="tab">
+                <button onclick="window.location.href='/updates'">updates</button>
+            </div>
+            <div class="tab">
+                <button onclick="window.location.href='/resume'">resume</button>
+            </div>
+        </nav>    
+    </div>
+
+
+    <div class="container" style="text-align: left">
+
+        <h2>{{ page.title }}</h2>
+        <h3>{{ page.date | date: '%B %-d, %Y' }}</h3>
+
+        {{ content }}
+
+
+    </div>
+
+</body>
+</html>

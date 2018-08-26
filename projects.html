@@ -1,0 +1,234 @@
+---
+layout: default
+---
+<h5> projects </h5>
+
+<div id="projectButtons">
+    <button class="btn active" onclick="filterSelection('all')">show all</button>
+    <button class="btn" onclick="filterSelection('personal')">personal</button>
+    <button class="btn" onclick="filterSelection('comp40')">comp 40</button>
+    <button class="btn" onclick="filterSelection('comp15')">comp 15</button>
+    <br>
+    <button class="btn" onclick="filterSelection('cplusplus')">c++</button>
+    <button class="btn" onclick="filterSelection('ccc')">c</button>
+    <button class="btn" onclick="filterSelection('python')">python</button>
+    <button class="btn" onclick="filterSelection('htmlcss')">html/css</button>
+    <button class="btn" onclick="filterSelection('assembly')">assembly</button>
+    <button class="btn" onclick="filterSelection('js')">javascript</button>
+</div>
+
+
+<div id="tileContainer">
+    <!-- icons from icons8 -->
+    <a class="tile personal python" href="#familytreepop">
+        <h2>family tree</h2>
+        <h3>personal project | python</h3>
+        <div class="tileicon"><img src="../img/tree.png"></div>
+    </a>
+
+    <div id="familytreepop" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>family tree</h2>
+            <h3>personal project | python</h3>
+            <div class="tileicon"><img src="../img/tree.png"></div>
+            <ul>
+                <li>implemented weighted directed graph using adjacency lists to represent family tree where weight correlates to type of relationship</li>
+                <li>wrote algorithm to determine relationship between family members</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile personal htmlcss js" href="#mapmoneypop">
+        <h2>map the money</h2>
+        <h3>personal project | html, css, javascript</h3>
+        <div class="tileicon"><img src="../img/capitol.png"></div>
+    </a>
+
+    <div id="mapmoneypop" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>map the money</h2>
+            <h3>personal project | html, css, javascript | <a href="https://emilytran99.github.io/mapthemoney/" target="_blank">link</a></h3>
+            <div class="tileicon"><img src="../img/capitol.png"></div>
+            <ul>
+                <li>built map showing top 10 individual and corporate donors to each sitting U.S. senator using HTML, CSS, and the D3 Javascript library</li>
+                <li>cleaned data retrieved from Center for Responsive Politics’ public campaign finance disclosure API</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp40 assembly" href="#rpniipop">
+        <h2>reverse polish notation calculator, pt. ii</h2>
+        <h3>comp 40 | um macro assembler</h3>
+        <div class="tileicon"><img src="../img/calculator.png"></div>
+    </a>
+
+    <div id="rpniipop" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>reverse polish notation calculator, pt. ii</h2>
+            <h3>comp 40 | um macro assembler</h3>
+            <div class="tileicon"><img src="../img/calculator.png"></div>
+            <ul>
+                <li>implemented calculator on UM from previous project using jump table for control flow and a register for value stack</li>
+                <li>wrote macros for mathematic and bitwise operations, and recursive print function to print multi-digit numbers in pseudo assembly</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp40 ccc" href="#umpop">
+        <h2>universal machine</h2>
+        <h3>comp 40 | c</h3>
+        <div class="tileicon"><img src="../img/window.png"></div>
+    </a>
+
+    <div id="umpop" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>universal machine</h2>
+            <h3>comp 40 | c</h3>
+            <div class="tileicon"><img src="../img/window.png"></div>
+            <ul>
+                <li>designed and implemented Turing complete 32bit virtual machine with 8 registers and segmented memory on 64bit machine</li>
+                <li>profiled and removed performance bottlenecks to decrease time for executing benchmark program from 150s to 5s</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp40 ccc assembly" href="#binarypop">
+        <h2>binary bomb</h2>
+        <h3>comp 40 | c, amd64 assembly</h3>
+        <div class="tileicon"><img src="../img/dynamite.png"></div>
+    </a>
+
+    <div id="binarypop" class="overlay">
+         <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>binary bomb</h2>
+            <h3>comp 40 | c, amd64 assembly</h3>
+            <div class="tileicon"><img src="../img/dynamite.png"></div>
+            <ul>
+                <li>used GNU Debugger to analyze assembly and find out what inputs would “defuse” each of the six mini programs</li>
+                <li>wrote out the C equivalent to understand the underlying structure of programs and how various data structures are represented in assembly</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp40 ccc" href="#arithpop">
+        <h2>image compressor & decompressor</h2>
+        <h3>comp 40 | c</h3>
+        <div class="tileicon"><img src="../img/image.png"></div>
+    </a>
+
+    <div id="arithpop" class="overlay">
+         <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>image compressor & decompressor</h2>
+            <h3>comp 40 | c</h3>
+            <div class="tileicon"><img src="../img/image.png"></div>
+            <ul>
+                <li>designed and implemented interfaces for converting RGB color space to component video color space, using the discrete cosine transform, and quantizing chroma</li>
+                <li>wrote bitpacking module to condense pixel information into 64 bit words</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp40 ccc" href="#ppmtranspop">
+        <h2>ppmtrans</h2>
+        <h3>comp 40 | c</h3>
+        <div class="tileicon"><img src="../img/grid.png"></div>
+    </a>
+
+    <div id="ppmtranspop" class="overlay">
+         <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>ppmtrans</h2>
+            <h3>comp 40 | c</h3>
+            <div class="tileicon"><img src="../img/grid.png"></div>
+            <ul>
+                <li>designed and executed implementation of blocked (n x n) 2D array using 1D array for given polymorphic interface to maximize locality</li>
+                <li>wrote program that transformed .ppm files with row, col, and block-major traversals</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp40 ccc" href="#unblackpop">
+        <h2>unblackedges</h2>
+        <h3>comp 40 | c</h3>
+        <div class="tileicon"><img src="../img/invert.png"></div>
+    </a>
+
+    <div id="unblackpop" class="overlay">
+         <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>unblackedges</h2>
+            <h3>comp 40 | c</h3>
+            <div class="tileicon"><img src="../img/invert.png"></div>
+            <ul>
+                <li>designed and executed implementation of unboxed 2D array using 1D array for given interface</li>
+                <li>wrote 2 versions of program removing black edges from scanned images, using stack and recursion</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp40 ccc" href="#simlinespop">
+        <h2>simlines</h2>
+        <h3>comp 40 | c</h3>
+        <div class="tileicon"><img src="../img/search.png"></div>
+    </a>
+
+    <div id="simlinespop" class="overlay">
+         <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>simlines</h2>
+            <h3>comp 40 | c</h3>
+            <div class="tileicon"><img src="../img/search.png"></div>
+            <ul>
+                <li>wrote program that scanned through files and identified similar lines using hash tables</li>
+                <li>parsed through input following given definition of similarity and stored locations of similar lines in linked lists</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp15 cplusplus" href="#gerppop">
+        <h2>gerp</h2>
+        <h3>comp 15 | c++</h3>
+        <div class="tileicon"><img src="../img/directory.png"></div>
+    </a>
+
+    <div id="gerppop" class="overlay">
+         <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>gerp</h2>
+            <h3>comp 15 | c++</h3>
+            <div class="tileicon"><img src="../img/directory.png"></div>
+            <ul>
+                <li>implemented program that indexed and queried file directory for all lines with given word with both case sensitive and insensitive capabilities</li>
+                <li>used hash tables to store appearances and implemented chaining for handling collisions</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile comp15 cplusplus" href="#rpnipop">
+        <h2>reverse polish notation calculator, pt. i</h2>
+        <h3>comp 15 | c++</h3>
+        <div class="tileicon"><img src="../img/abacus.png"></div>
+    </a>
+
+    <div id="rpnipop" class="overlay">
+         <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>reverse polish notation calculator, pt. i</h2>
+            <h3>comp 15 | c++</h3>
+            <div class="tileicon"><img src="../img/abacus.png"></div>
+            <ul>
+                <li>implemented calculator that could also parse booleans and code blocks using a stack</li>
+                <li>added functionality for supplementary features such as swap, execute, and read from file</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/projectfilters.js" type="text/javascript"></script>
