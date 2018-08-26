@@ -10,7 +10,7 @@
 
 <body>
     <div class="masthead">
-        <h1 class="heading"><a href="index.html">emily tran.</a></h1>   
+        <div class="heading"><a href="index.html">emily tran.</a></div>   
         <nav>
             <div class="tab">
                 <button onclick="window.location.href='/'">about</button>
@@ -30,8 +30,8 @@
 
     <div class="container" style="text-align: left">
 
-        <h2>{{ page.title }}</h2>
-        <h3>{{ page.date | date: '%B %-d, %Y' }}</h3>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.date | date: '%B %-d, %Y' }}</h2>
 
         {{ content }}
 

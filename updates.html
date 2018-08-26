@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<h5> updates </h5>
+<h3> updates </h3>
 
 <ul style="margin-top: 35px">
     {% for post in site.posts %}
         <li style="text-align: left; margin-bottom:5px">
-        	<h2 style="display: inline; margin-right: 20px"><a href="{{ post.url }}" style=" color: black">{{ post.title }}</a></h2>
-            <h3 style="display: inline">{{ post.date | date: '%B %-d, %Y' }}</h3>
+        	<p style="display: inline; font-size: 16px">{{ post.date | date: '%B %-d, %Y' }} »</p>
+        	<h4 style="display: inline;"><a href="{{ post.url }}" style=" color: black">{{ post.title }}</a></h4>
         </li>
     {% endfor %}
 </ul>

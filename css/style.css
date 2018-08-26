@@ -19,6 +19,7 @@ html {
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, section {
@@ -185,6 +186,7 @@ ul {
     position: relative;
     padding-bottom: 10px;
     display: block;    
+    font-weight: normal;
 }
 
 .heading a {
@@ -224,38 +226,50 @@ nav {
     text-align: center;
 }
 
-h2 {
+#currently {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "HK Grotesk Bold";
+    display: inline;
+}
+
+h1 { /* for project and update titles*/
     font-size: 18px;
     letter-spacing: 1px;
     color: black;
     font-family: "Galano";
     line-height: 20px;
+    font-weight: normal;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 }
 
-h3 {
+h2 { /* for update dates and project info */
     font-size: 14px;
     letter-spacing: 0.5px;
     font-family: "HK Grotesk Bold";
     line-height: 1.2;
+    font-weight: normal;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 }
 
-h4 {
-    font-size: 18px;
-    margin: 20px 0 0 0;
-    font-family: "HK Grotesk Bold";
-    display: inline-block;
-}
-
-h5 {
+h3 { /* for (nav) page titles */
     font-size: 22px;
     letter-spacing: 1px;
     color: black;
+    font-weight: normal;
     font-family: "Galano";
-    line-height: 20px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+h4 { /* for post listings on updates page */
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-family: "HK Grotesk Bold";
+    line-height: 1.2;
+    font-weight: normal;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 }
@@ -269,6 +283,7 @@ h5 {
 #tileContainer {
     margin: 10px 0 15px 0;
     overflow: hidden;
+    display: inline-block;
 }
 
 #tileContainer ul {
@@ -277,10 +292,10 @@ h5 {
 
 .tile {
     width: 250px;
-    min-height: 210px;
+    height: 210px;
     overflow-y: scroll;
     text-align: center;
-    display: none;
+    vertical-align: middle;
     border-style: solid;
     border-width: 3px;
     padding: 15px 18px 0 15px;
@@ -289,7 +304,7 @@ h5 {
     box-shadow: 1px 2px 3px #b3b8bc;
 }
 
-.tile h2, h3 {
+.tile h1, h2 {
     text-decoration: none;
     color: black;
 }
