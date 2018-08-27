@@ -283,7 +283,6 @@ h4 { /* for post listings on updates page */
 #tileContainer {
     margin: 10px 0 15px 0;
     overflow: hidden;
-    display: inline-block;
 }
 
 #tileContainer ul {
@@ -295,6 +294,7 @@ h4 { /* for post listings on updates page */
     height: 210px;
     overflow-y: scroll;
     text-align: center;
+    display: none;
     vertical-align: middle;
     border-style: solid;
     border-width: 3px;
