@@ -4,9 +4,18 @@ layout: default
 <h3> updates </h3>
 
 <ul style="margin-top: 35px">
-    {% for post in site.posts %}
+    {% for post in site.categories.reads %}
         <li style="text-align: left; margin-bottom:5px">
-        	<p style="display: inline; font-size: 16px">{{ post.date | date: '%B %-d, %Y' }} »</p>
+        	<p style="display: inline; font-size: 16px">continually updated »</p>
+        	<h4 style="display: inline;"><a href="{{ post.url }}" style=" color: black">{{ post.title }}</a></h4>
+        </li>
+    {% endfor %}
+</ul>
+
+<ul style="margin-top: 20px">
+    {% for post in site.categories.updates %}
+        <li style="text-align: left; margin-bottom:5px">
+        	<p style="display: inline; font-size: 16px">{{ post.date | date_to_string }} »</p>
         	<h4 style="display: inline;"><a href="{{ post.url }}" style=" color: black">{{ post.title }}</a></h4>
         </li>
     {% endfor %}

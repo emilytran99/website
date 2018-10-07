@@ -78,14 +78,14 @@ ul {
 }
 
 @media only screen and (max-width: 576px) {
+    .masthead {
+        padding-bottom: 10px;
+    }
     .heading {
         font-size: 40px;
         line-height: 45px;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
-    }
-    nav {
-        margin-bottom: 10px;
     }
     .tab {
         margin-top: 5px;
@@ -107,14 +107,14 @@ ul {
 }
 
 @media (min-width: 576px) {
+    .masthead {
+        padding-bottom: 10px;
+    }
     .heading {
         font-size: 45px;
         line-height: 50px;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
-    }
-    nav {
-        margin-bottom: 10px;
     }
     .tab {
         margin-top: 5px;
@@ -136,6 +136,9 @@ ul {
 }
 
 @media (min-width: 768px) {
+    .masthead {
+        padding-bottom: 0px;
+    }
     .heading {
         font-size: 45px;
         line-height: 50px;
@@ -168,7 +171,6 @@ ul {
 
 .masthead {
     padding-top: 15px;
-    margin-bottom: 10px;
     background-color: #FADA5E;
     overflow: auto;    
     z-index: 990;
@@ -224,6 +226,17 @@ nav {
 
 .container {
     text-align: center;
+}
+
+.container-reads a {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-family: "HK Grotesk Bold";
+    line-height: 1.2;
+    font-weight: normal;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
 
 #currently {
