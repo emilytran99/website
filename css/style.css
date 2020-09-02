@@ -1,4 +1,4 @@
-:root {
+h1:root {
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
@@ -287,6 +287,16 @@ h4 { /* for post listings on updates page */
     -webkit-margin-after: 0;
 }
 
+h5 { /* project details */
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-family: "HK Grotesk Regular";
+    line-height: 1.4;
+    font-weight: normal;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
 #projectButtons {
     margin: auto;
     margin-top: 20px;
@@ -304,7 +314,7 @@ h4 { /* for post listings on updates page */
 
 .tile {
     width: 250px;
-    height: 210px;
+    height: 200px;
     overflow-y: scroll;
     text-align: center;
     display: none;

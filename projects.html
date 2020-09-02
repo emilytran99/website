@@ -7,32 +7,246 @@ layout: default
 
 <div id="projectButtons">
     <button class="btn active" onclick="filterSelection('all')">show all</button>
+    <button class="btn" onclick="filterSelection('coursework')">coursework</button>
+    <button class="btn" onclick="filterSelection('internship')">internship</button>
     <button class="btn" onclick="filterSelection('personal')">personal</button>
-    <button class="btn" onclick="filterSelection('comp40')">comp 40</button>
-    <button class="btn" onclick="filterSelection('comp15')">comp 15</button>
-    <br>
-    <button class="btn" onclick="filterSelection('cplusplus')">c++</button>
-    <button class="btn" onclick="filterSelection('ccc')">c</button>
-    <button class="btn" onclick="filterSelection('python')">python</button>
-    <button class="btn" onclick="filterSelection('htmlcss')">html/css</button>
-    <button class="btn" onclick="filterSelection('assembly')">assembly</button>
-    <button class="btn" onclick="filterSelection('js')">javascript</button>
 </div>
 
 
 <div id="tileContainer">
-    <!-- icons from icons8 -->
-    <a class="tile personal python" href="#familytreepop">
+    <a class="tile internship" href="#otg">
+        <h1>square on the go</h1>
+        <h2>firebase, vue.js</h2>
+        <div class="tileicon"><img src="../img/foodtruck.png"></div>
+    </a>
+
+    <div id="otg" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>square on the go</h1>
+            <h2>square internship, summer 2020</h2>
+            <h5>firebase, vue.js</h5>
+            <div class="tileicon"><img src="../img/foodtruck.png"></div>
+            <ul>
+                <li>created web platform in Vue.js publicizing temporary locations of 2 million mobile vendors to alleviate COVID-19 losses</li>
+                <li>wrote Firebase endpoints to retrieve and update vendor event and location data stored in Cloud Firestore </li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile internship" href="#allday">
+        <h1>all day counts</h1>
+        <h2>java, jooq, figma</h2>
+        <div class="tileicon"><img src="../img/allday.png"></div>
+    </a>
+
+    <div id="allday" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>all day counts</h1>
+            <h2>square internship, summer 2020</h2>
+            <h5>java, jooq, figma</h5>
+            <div class="tileicon"><img src="../img/allday.png"></div>
+            <ul>
+                <li>authored backend design for new endpoint in Square Kitchen Display Service (KDS) after working with design and product to determine desired functionality</li>
+                <li>implemented design by building end to end endpoint to display aggregate counts of unfulfilled items on open KDS tickets</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#semnet">
+        <h1>grading semantic network</h1>
+        <h2>prolog</h2>
+        <div class="tileicon"><img src="../img/grade.png"></div>
+    </a>
+
+    <div id="semnet" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>grading semantic network</h1>
+            <h2>cs2910: artificial intelligence (royal holloway university of london)</h2>
+            <h5>prolog</h5>
+            <div class="tileicon"><img src="../img/grade.png"></div>
+            <ul>
+                <li>created two semantic networks to represent student system data and calculate outcomes regarding test scores</li>
+                <li>used situation calculus to determine initial state, preconditions and effects of actions, and frame axiom for an interpersonal sale scenario</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#typechecker">
+        <h1>rube type checker</h1>
+        <h2>standard ml</h2>
+        <div class="tileicon"><img src="../img/check.png"></div>
+    </a>
+
+    <div id="typechecker" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>rube type checker</h1>
+            <h2>comp 105: programming languages</h2>
+            <h5>standard ml</h5>
+            <div class="tileicon"><img src="../img/check.png"></div>
+            <ul>
+                <li>implemented static type checking system for Ruby variation language with type annotations</li>
+                <li>verified types and subtypes for parameters and return values of methods </li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#interp">
+        <h1>rube interpreter</h1>
+        <h2>standard ml</h2>
+        <div class="tileicon"><img src="../img/ruby.png"></div>
+    </a>
+
+    <div id="interp" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>rube interpreter</h1>
+            <h2>comp 105: programming languages</h2>            
+            <h5>standard ml</h5>
+            <div class="tileicon"><img src="../img/ruby.png"></div>
+            <ul>
+                <li>wrote interpreter in Standard ML for the abstract syntax types in Ruby variation language</li>
+                <li>implemented operational semantics rules for invoking methods and persisting values in environments</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#bostont">
+        <h1>boston t simulator</h1>
+        <h2>ruby</h2>
+        <div class="tileicon"><img src="../img/subway.png"></div>
+    </a>
+
+    <div id="bostont" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>boston t simulator</h1>
+            <h2>comp 105: programming languages</h2>
+            <h5>ruby</h5>
+            <div class="tileicon"><img src="../img/subway.png"></div>
+            <ul>
+                <li>implemented simulation of passengers traveling through the Boston subway system on various lines</li>
+                <li>calculated when passengers should board, transfer, or exit trains based on the most optimal path between their origin and destination</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#unlock">
+        <h1>ticketing unlocked computers</h1>
+        <h2>paper</h2>
+        <div class="tileicon"><img src="../img/unlock.png"></div>
+    </a>
+
+    <div id="unlock" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>ticketing unlocked computers</h1>
+            <h2>comp 112: computer system security</h2>
+            <h5>paper</h5>
+            <div class="tileicon"><img src="../img/unlock.png"></div>
+            <ul>
+                <li>conducted social experiment to analyze college student security behavior by leaving parking tickets with link to survey around campus whenever computer was left unlocked</li>
+                <li>determined that many college students had limited awareness of good security hygiene and/or had too much security fatigue/user resistance to prioritize security protocols</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#alarm">
+        <h1>packet scanner alarm</h1>
+        <h2>python</h2>
+        <div class="tileicon"><img src="../img/alarm.png"></div>
+    </a>
+
+    <div id="alarm" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>packet scanner alarm</h1>
+            <h2>comp 112: computer system security</h2>
+            <h5>python</h5>
+            <div class="tileicon"><img src="../img/beacon.png"></div>
+            <ul>
+                <li>wrote program to inspect PCAP files for port scanning with TCP packets or Nikto</li>
+                <li>examined network stream to alert for instances of plaintext credentials sent via HTTP or FTP and analyzed metadata to garner information about source IPs</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile internship" href="#bevi">
+        <h1>bevi hack</h1>
+        <h2>vulnerability</h2>
+        <div class="tileicon"><img src="../img/bevi.png"></div>
+    </a>
+
+    <div id="bevi" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>bevi hack</h1>
+            <h2>intuit internship, summer 2019</h2>
+            <h5>vulnerability</h5>
+            <div class="tileicon"><img src="../img/bevi.png"></div>
+            <ul>
+                <li>discovered security vulnerability in BEVI machine allowing access to admin settings and potentially corporate wifi networks via console with bluetooth, wifi, ethernet, and USB capabilities</li>
+                <li>relayed findings to BEVI to improve their software security configurations</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile internship" href="#beacon">
+        <h1>beaconing pipeline</h1>
+        <h2>python, bash, aws, rita, zeek</h2>
+        <div class="tileicon"><img src="../img/beacon.png"></div>
+    </a>
+
+    <div id="beacon" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>beaconing pipeline</h1>
+            <h2>intuit internship, summer 2019</h2>
+            <h5>python, bash, aws, rita, zeek</h5>
+            <div class="tileicon"><img src="../img/beacon.png"></div>
+            <ul>
+                <li>customized open source tool RITA to process Intuit's OpenDNS logs</li>
+                <li>built pipeline in AWS processing RITA's output to analyze corporate network activity and identify compromised devices in real time</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#proxy">
+        <h1>http/https proxy</h1>
+        <h2>c</h2>
+        <div class="tileicon"><img src="../img/proxy.png"></div>
+    </a>
+
+    <div id="proxy" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>http/https proxy</h1>
+            <h2>comp 112: networks</h2>
+            <h5>c</h5>
+            <div class="tileicon"><img src="../img/proxy.png"></div>
+            <ul>
+                <li>built HTTP/HTTPS proxy with cache in C and added functionality for multiple clients & bandwidth limiting</li>
+                <li>implemented server in C to test proxy features and wrote Python script to automate performance tests</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <a class="tile personal" href="#familytree">
         <h1>family tree</h1>
-        <h2>personal project | python</h2>
+        <h2>python</h2>
         <div class="tileicon"><img src="../img/tree.png"></div>
     </a>
 
-    <div id="familytreepop" class="overlay">
+    <div id="familytree" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <h1>family tree</h1>
-            <h2>personal project | python</h2>
+            <h2>personal project</h2>
+            <h5>python</h5>
             <div class="tileicon"><img src="../img/tree.png"></div>
             <ul>
                 <li>implemented weighted directed graph using adjacency lists to represent family tree where weight correlates to type of relationship</li>
@@ -41,17 +255,18 @@ layout: default
         </div>
     </div>
 
-    <a class="tile personal htmlcss js" href="#mapmoneypop">
+    <a class="tile personal" href="#mapmoney">
         <h1>map the money</h1>
-        <h2>personal project | html, css, javascript</h2>
+        <h2>html, css, javascript</h2>
         <div class="tileicon"><img src="../img/capitol.png"></div>
     </a>
 
-    <div id="mapmoneypop" class="overlay">
+    <div id="mapmoney" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <h1>map the money</h1>
-            <h2>personal project | html, css, javascript | <a href="https://emilytran99.github.io/mapthemoney/" target="_blank">link</a></h2>
+            <h2>html, css, javascript</h2>
+            <h5>personal project | <a href="https://emilytran99.github.io/mapthemoney/" target="_blank">link</a></h5>
             <div class="tileicon"><img src="../img/capitol.png"></div>
             <ul>
                 <li>built map showing top 10 individual and corporate donors to each sitting U.S. senator using HTML, CSS, and the D3 Javascript library</li>
@@ -60,36 +275,38 @@ layout: default
         </div>
     </div>
 
-    <a class="tile comp40 assembly" href="#rpniipop">
-        <h1>reverse polish notation calculator, pt. ii</h1>
-        <h2>comp 40 | um macro assembler</h2>
+    <a class="tile coursework" href="#rpnii">
+        <h1>rpn calculator, pt. ii</h1>
+        <h2>um macro assembler</h2>
         <div class="tileicon"><img src="../img/calculator.png"></div>
     </a>
 
-    <div id="rpniipop" class="overlay">
+    <div id="rpnii" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
-            <h1>reverse polish notation calculator, pt. ii</h1>
-            <h2>comp 40 | um macro assembler</h2>
+            <h1>rpn calculator, pt. ii</h1>
+            <h2>comp 40: machine structure and assembly language programming</h2>
+            <h5>um macro assembler</h5>
             <div class="tileicon"><img src="../img/calculator.png"></div>
             <ul>
-                <li>implemented calculator on UM from previous project using jump table for control flow and a register for value stack</li>
+                <li>implemented reverse polish notation calculator on UM from previous project using jump table for control flow and a register for value stack</li>
                 <li>wrote macros for mathematic and bitwise operations, and recursive print function to print multi-digit numbers in pseudo assembly</li>
             </ul>
         </div>
     </div>
 
-    <a class="tile comp40 ccc" href="#umpop">
+    <a class="tile coursework" href="#um">
         <h1>universal machine</h1>
-        <h2>comp 40 | c</h2>
+        <h2>c</h2>
         <div class="tileicon"><img src="../img/window.png"></div>
     </a>
 
-    <div id="umpop" class="overlay">
+    <div id="um" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
             <h1>universal machine</h1>
-            <h2>comp 40 | c</h2>
+            <h2>comp 40: machine structure and assembly language programming</h2>
+            <h5>c</h5>
             <div class="tileicon"><img src="../img/window.png"></div>
             <ul>
                 <li>designed and implemented Turing complete 32bit virtual machine with 8 registers and segmented memory on 64bit machine</li>
@@ -98,17 +315,18 @@ layout: default
         </div>
     </div>
 
-    <a class="tile comp40 ccc assembly" href="#binarypop">
+    <a class="tile coursework" href="#binary">
         <h1>binary bomb</h1>
-        <h2>comp 40 | c, amd64 assembly</h2>
+        <h2>c, amd64 assembly</h2>
         <div class="tileicon"><img src="../img/dynamite.png"></div>
     </a>
 
-    <div id="binarypop" class="overlay">
+    <div id="binary" class="overlay">
          <div class="popup">
             <a class="close" href="#">&times;</a>
             <h1>binary bomb</h1>
-            <h2>comp 40 | c, amd64 assembly</h2>
+            <h2>comp 40: machine structure and assembly language programming</h2>
+            <h5>c, amd64 assembly</h5>
             <div class="tileicon"><img src="../img/dynamite.png"></div>
             <ul>
                 <li>used GNU Debugger to analyze assembly and find out what inputs would “defuse” each of the six mini programs</li>
@@ -117,17 +335,18 @@ layout: default
         </div>
     </div>
 
-    <a class="tile comp40 ccc" href="#arithpop">
+    <a class="tile coursework" href="#arith">
         <h1>image compressor & decompressor</h1>
-        <h2>comp 40 | c</h2>
+        <h2>c</h2>
         <div class="tileicon"><img src="../img/image.png"></div>
     </a>
 
-    <div id="arithpop" class="overlay">
+    <div id="arith" class="overlay">
          <div class="popup">
             <a class="close" href="#">&times;</a>
             <h1>image compressor & decompressor</h1>
-            <h2>comp 40 | c</h2>
+            <h2>comp 40: machine structure and assembly language programming</h2>
+            <h5>c</h5>
             <div class="tileicon"><img src="../img/image.png"></div>
             <ul>
                 <li>designed and implemented interfaces for converting RGB color space to component video color space, using the discrete cosine transform, and quantizing chroma</li>
@@ -136,17 +355,18 @@ layout: default
         </div>
     </div>
 
-    <a class="tile comp40 ccc" href="#ppmtranspop">
-        <h1>ppmtrans</h1>
-        <h2>comp 40 | c</h2>
+    <a class="tile coursework" href="#ppmtrans">
+        <h1>image rotator</h1>
+        <h2>c</h2>
         <div class="tileicon"><img src="../img/grid.png"></div>
     </a>
 
-    <div id="ppmtranspop" class="overlay">
+    <div id="ppmtrans" class="overlay">
          <div class="popup">
             <a class="close" href="#">&times;</a>
-            <h1>ppmtrans</h1>
-            <h2>comp 40 | c</h2>
+            <h1>image rotator</h1>
+            <h2>comp 40: machine structure and assembly language programming</h2>
+            <h5>c</h5>
             <div class="tileicon"><img src="../img/grid.png"></div>
             <ul>
                 <li>designed and executed implementation of blocked (n x n) 2D array using 1D array for given polymorphic interface to maximize locality</li>
@@ -155,36 +375,18 @@ layout: default
         </div>
     </div>
 
-    <a class="tile comp40 ccc" href="#unblackpop">
-        <h1>unblackedges</h1>
-        <h2>comp 40 | c</h2>
-        <div class="tileicon"><img src="../img/invert.png"></div>
-    </a>
-
-    <div id="unblackpop" class="overlay">
-         <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <h1>unblackedges</h1>
-            <h2>comp 40 | c</h2>
-            <div class="tileicon"><img src="../img/invert.png"></div>
-            <ul>
-                <li>designed and executed implementation of unboxed 2D array using 1D array for given interface</li>
-                <li>wrote 2 versions of program removing black edges from scanned images, using stack and recursion</li>
-            </ul>
-        </div>
-    </div>
-
-    <a class="tile comp40 ccc" href="#simlinespop">
-        <h1>simlines</h1>
-        <h2>comp 40 | c</h2>
+    <a class="tile coursework" href="#simlines">
+        <h1>text similarity finder</h1>
+        <h2>c</h2>
         <div class="tileicon"><img src="../img/search.png"></div>
     </a>
 
-    <div id="simlinespop" class="overlay">
+    <div id="simlines" class="overlay">
          <div class="popup">
             <a class="close" href="#">&times;</a>
-            <h1>simlines</h1>
-            <h2>comp 40 | c</h2>
+            <h1>text similarity finder</h1>
+            <h2>comp 40: machine structure and assembly language programming</h2>
+            <h5>c</h5>
             <div class="tileicon"><img src="../img/search.png"></div>
             <ul>
                 <li>wrote program that scanned through files and identified similar lines using hash tables</li>
@@ -193,17 +395,18 @@ layout: default
         </div>
     </div>
 
-    <a class="tile comp15 cplusplus" href="#gerppop">
-        <h1>gerp</h1>
-        <h2>comp 15 | c++</h2>
+    <a class="tile coursework" href="#grep">
+        <h1>grep</h1>
+        <h2>c++</h2>
         <div class="tileicon"><img src="../img/directory.png"></div>
     </a>
 
-    <div id="gerppop" class="overlay">
+    <div id="grep" class="overlay">
          <div class="popup">
             <a class="close" href="#">&times;</a>
-            <h1>gerp</h1>
-            <h2>comp 15 | c++</h2>
+            <h1>grep</h1>
+            <h2>comp 15: data structures</h2>
+            <h5>c++</h5>
             <div class="tileicon"><img src="../img/directory.png"></div>
             <ul>
                 <li>implemented program that indexed and queried file directory for all lines with given word with both case sensitive and insensitive capabilities</li>
@@ -212,20 +415,21 @@ layout: default
         </div>
     </div>
 
-    <a class="tile comp15 cplusplus" href="#rpnipop">
-        <h1>reverse polish notation calculator, pt. i</h1>
-        <h2>comp 15 | c++</h2>
+    <a class="tile coursework" href="#rpni">
+        <h1>rpn calculator, pt. i</h1>
+        <h2>c++</h2>
         <div class="tileicon"><img src="../img/abacus.png"></div>
     </a>
 
-    <div id="rpnipop" class="overlay">
+    <div id="rpni" class="overlay">
          <div class="popup">
             <a class="close" href="#">&times;</a>
-            <h1>reverse polish notation calculator, pt. i</h1>
-            <h2>comp 15 | c++</h2>
+            <h1>rpn calculator, pt. i</h1>
+            <h2>comp 15: data structures</h2>
+            <h5>c++</h5>
             <div class="tileicon"><img src="../img/abacus.png"></div>
             <ul>
-                <li>implemented calculator that could also parse booleans and code blocks using a stack</li>
+                <li>implemented reverse polish notation calculator that could also parse booleans and code blocks using a stack</li>
                 <li>added functionality for supplementary features such as swap, execute, and read from file</li>
             </ul>
         </div>
